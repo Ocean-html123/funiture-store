@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kenia&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Italianno&family=Kenia&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 50%;
+    margin-top: 3rem;
+    border-radius: 12px;
+}
+.flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   position: absolute;
+   top: 10%;
+   left: 2rem;
+place-items: center;
+}
+.class {
+    margin-left: -1rem;
+    margin-top: 3rem;
+}
+h2 {
+    margin-bottom: 1rem;
+    font-family: 'Kenia';
+}
+h4 {
+    margin-bottom: 1rem;
+    font-family: 'Dancing Script';
+}
+h1 {
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+    font-family: 'Kenia';
+}
+h3 {
+    font-family: 'Kenia';
+}
+.loader {
+    border: 1px solid;
+    padding: 2rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 20rem;
+    display: grid;
+    border-bottom-width: 3px;
+    border-top-width: 3px;
+    border-color: orange;
+    animation: rotate 1s linear infinite;
+  }
+  .loader-1 {
+    display: grid;
+    place-items: center;
+  }
+  @keyframes rotate {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+@media screen and (max-width: 600px){
+    .flex {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    h1 {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    img {
+       margin-top: 1rem;
+    }
+    .class {
+       margin-left: -1rem;
+       margin-top: 2rem;
+    }
+}

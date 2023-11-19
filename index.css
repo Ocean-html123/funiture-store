@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kenia&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Italianno&family=Kenia&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.pot{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.pot p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: orange;
+}
+i {
+    font-size: 1.4rem;
+}
+.pot button {
+    border: 1px solid #222;
+    padding: 0.3rem 0.6rem;
+    background: #222;
+    border-radius: 0.25rem;
+    color: antiquewhite;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin-top: 1rem;
+    border: 1px solid orange;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 0.2rem;
+    border-radius: 12px;
+    width: 100%;
+   
+}
+a {
+    padding: 1rem;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Kenia';
+    font-size: 1.5rem;
+}
+.body {
+  background: url(images/product1\ \(3\).jpg) center/cover no-repeat;
+  position: sticky;
+  min-height: 100vh;
+}
+.shift {
+    min-height: 100vh;
+   background-color: #2222225e;
+  text-align: center;
+}
+.div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kenia';
+    font-size: 2rem;
+}
+form {
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+input {
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: 'Dancing Script';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+img {
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem;
+}
+.funitures{
+    /* border: 1px solid; */
+    align-items: center;
+   width: 70%;
+   height: 70%;
+   border-radius: 1rem;
+ 
+}
+.collection {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 1rem;
+    place-items: center;
+    position: absolute;
+    left: 2rem;
+}
+h1 {
+    text-align: center;
+    font-family: 'Kenia';
+    margin-top: 4rem;
+ margin-bottom: 2rem;
+}
+p {
+    color: white;
+}
+h2 {
+    text-align: center;
+    font-family: 'Kenia';
+}
+h3{
+    text-align: center;
+    font-family: 'Kenia';
+}
+a button {
+ padding: 0.3rem;
+ font-family: 'Dancing Script';
+ font-size: 1.3rem;
+ cursor: pointer;
+margin-top: 2rem;
+border-top-right-radius: 12px;
+border-bottom-left-radius: 12px;
+}
+a button:hover {
+    color: orange;
+    border-color: orange;
+    padding: 0.5rem;
+    transition: all 0.2s linear;
+}
+.loader {
+    border: 1px solid;
+    padding: 2rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 20rem;
+    display: grid;
+    border-bottom-width: 3px;
+    border-top-width: 3px;
+    border-color: orange;
+    animation: rotate 1s linear infinite;
+  }
+  .loader-1 {
+    display: grid;
+    place-items: center;
+  }
+  @keyframes rotate {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+@media screen and (max-width: 600px){
+   .link a {
+        visibility: hidden;
+    }
+    img {
+        width: 100%;
+        height: 70%;
+        border-radius: 1rem;
+    }
+    .funitures{
+        /* border: 1px solid; */
+        align-items: center;
+       width: 70%;
+       height: 80%;
+       padding-bottom: 3rem;
+    }
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 1rem;
+        place-items: center;
+        position: absolute;
+        left: 2rem;
+    }
+    h1 {
+        text-align: center;
+        font-family: 'Kenia';
+        margin-top: 4rem;
+     margin-bottom: 2rem;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    a button {
+     padding: 0.3rem;
+    }
+}
